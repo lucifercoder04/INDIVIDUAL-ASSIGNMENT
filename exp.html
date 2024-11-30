@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exposure</title>
+    <style>
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 150px;
+            text-align: center;
+            background-image: url('headerexp.png');
+            background-size: cover;
+        }
+        nav {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+            font-style: oblique;
+        }
+        .footer {
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: 20px auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .slideshow-container img {
+            vertical-align: middle;
+            width: 100%;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <embed src="homepagesound.mp3" hidden="true"></embed>
+    
+    <nav>
+        <ul>
+            <a href="home.html">Home</a>
+            <a href="me.html">About me</a>
+            <a href="edu.html">Education</a>
+            <a href="exp.html">Experience</a>
+            <a href="family.html">Family</a>
+            <a href="gallery.html">Gallery</a>
+        </ul>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="intern1.jpg" alt="internship ">
+            <div class="text"> Me and company supervisor (Miss Junny Erfisyahry).This photo taken at the last day of my internship. The duration of my internship was about 2 months 
+                a lot of thing I learn from simple task to develop a softskills  </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="partime.jpg" alt="part time work">
+            <div class="text">After SPM ended. I tried by exploring do a part time job as 
+                Data Entry Clerk at fire extinguisher supplier company. The time period was about 6 months before I entered University.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="germaj.jpg" alt="germaj">
+            <div class="text">On 3<sup>th</sup>November my club organisation (GERMAJ) and (MPP) volunteer for our university. We been there for a Mahasiswa Anak Johor convention. A lots of knowledgable we got from there.
+            We also got met Anak Johor all over university like Unisza, University of Kuala Lumpur etc. </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="pm.jpg" alt="pemimpin mahasiswa">
+            <div class="text">This experience that I never forgotten for my entire study at UiTM  where I got develop myself in 
+                teamwork and leadership towards new intake student in total 2k+</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="kembaraclub.jpg" alt="kembara club">
+            <div class="text">One of the club that I love at my high school which is Kembara Club. But unfortunetly my teacher advisor Cikgu Aizam moved in 2019, and this is our memory a year after he moved.</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="spmcovid.jpg" alt="spm covid">
+            <div class="text">We are the first batch that been faced SPM  during Covid 19, but Alhamdulillah we manage to got flying color in our result</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <footer class="footer">
+        <p><marquee>This Website Developed for IMD318 Assignment</marquee></p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
